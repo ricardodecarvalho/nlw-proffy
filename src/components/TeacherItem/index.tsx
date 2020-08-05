@@ -1,5 +1,5 @@
 import React from 'react'
-import whatsAppIcon from "../../assets/images/icons/whatsapp.svg";
+import whatsAppIcon from "../../assets/images/icons/whatsApp.svg";
 
 import './styles.css'
 
@@ -9,7 +9,7 @@ function TeacherItem() {
             <header>
                 <img
                     src="https://avatars0.githubusercontent.com/u/6460158?s=460&u=0906959bde7441d211f191f943f6a210694ea3d8&v=4"
-                    alt="Ricardo de Carvalho"/>
+                    alt="Ricardo de Carvalho" />
                 <div>
                     <strong>Ricardo de Carvalho</strong>
                     <span>Química</span>
@@ -18,7 +18,7 @@ function TeacherItem() {
 
             <p>
                 Lorem Ipsum is simply dummy text of the printing.
-                <br/><br/>
+                <br /><br />
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make a type specimen book.
             </p>
@@ -29,7 +29,7 @@ function TeacherItem() {
                     <strong>R$ 120,00</strong>
                 </p>
                 <button type="button">
-                    <img src={whatsAppIcon} alt="Whatsapp"/>
+                    <img src={whatsAppIcon} alt="WhatsApp" />
                     Entrar em contato
                 </button>
             </footer>

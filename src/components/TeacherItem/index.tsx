@@ -18,7 +18,7 @@ interface TeacherItemProps {
 
 const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
 
-    function createNewConnection () {
+    function createNewConnection() {
         api.post('connections', {
             user_id: teacher.id
         })
@@ -45,7 +45,11 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
                     Preço/hora
                     <strong>R$ {teacher.cost}</strong>
                 </p>
-                <a target="_blank" onClick={createNewConnection} href={`https://wa.me/55${teacher.whatsapp}`}>
+                <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    onClick={createNewConnection}
+                    href={`https://wa.me/55${teacher.whatsapp}`}>
                     <img src={whatsAppIcon} alt="WhatsApp" />
                     Entrar em contato
                 </a>

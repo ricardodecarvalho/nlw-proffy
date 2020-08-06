@@ -129,7 +129,12 @@ function TeacherForm() {
                     <fieldset>
                         <legend>
                             Horários disponíveis
-                        <button type="button" onClick={addNewScheduleItem}>+ Novo horário</button>
+                        <button
+                                type="button"
+                                onClick={addNewScheduleItem}
+                            >
+                                + Novo horário
+                            </button>
                         </legend>
                         {scheduleItems.map((scheduleItem, i) => (
                             <div key={i} className="schedule-item">

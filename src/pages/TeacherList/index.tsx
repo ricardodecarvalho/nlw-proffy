@@ -76,6 +76,9 @@ function TeacherList() {
             </PageHeader>
 
             <main>
+                {teachers.length === 0 && (
+                    <p>Nenhum professor encontrado.</p>
+                )}
                 {teachers.map((teacher, i) => {
                     return <TeacherItem key={i} teacher={teacher} />
                 })}
